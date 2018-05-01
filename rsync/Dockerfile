@@ -1,4 +1,4 @@
-FROM gsol/ansible:2.3.0.0
+FROM gsol/ansible:2.5.2
 
 MAINTAINER Global-solutions
 
