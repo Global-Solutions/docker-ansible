@@ -5,7 +5,7 @@ MAINTAINER Global-solutions
 ENV ANSIBLE_VERSION=2.5.2
 
 RUN apk --update add --no-cache --virtual .deps gcc libc-dev openssl-dev make \
- && apk add --no-cache libffi-dev \
+ && apk add --no-cache libffi-dev openssl \
     rsync openssh-client \
     git \
     tar \
