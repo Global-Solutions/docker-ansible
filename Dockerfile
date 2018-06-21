@@ -11,7 +11,7 @@ RUN apk --update add --no-cache --virtual .deps gcc libc-dev openssl-dev make \
     tar \
  && pip install --no-cache-dir "ansible==$ANSIBLE_VERSION" \
  && apk del .deps \
- && rm -rf ~/.cache
+ && rm -rf ~/.cache \
  && addgroup -g 1000 ansible \
  && adduser -u 1000 -G ansible -s /bin/sh -D ansible \
  && mkdir /ansible && chown ansible:ansible /ansible
